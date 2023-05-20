@@ -20,7 +20,7 @@ def start_jvm(jvm_path=None):
         jpype.startJVM(jvm_path,
                        '-Dfile.encoding=UTF8',
                        '-ea',
-                       '-Xmx1024m',
+                       '-Xmx2048m',
                        convertStrings=False)
 
     if not jpype.isThreadAttachedToJVM():
